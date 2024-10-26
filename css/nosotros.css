@@ -1,0 +1,68 @@
+#nosotros {
+  display: flex;
+  flex-direction: row;
+  padding-top: 0;
+}
+
+#nosotros > div {
+  width: 40%;
+  flex-shrink: 1;
+  flex-basis: 50%;
+}
+
+#nosotros .images {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+
+#nosotros .images > img {
+  box-sizing: border-box;
+  max-width: 50%;
+  flex-shrink: 1;
+  transition: padding .3s ease-in-out;
+}
+
+#nosotros .images > img:nth-child(1) {
+  padding: 10% 10px 10px 10%;
+}
+#nosotros .images > img:nth-child(1):hover {
+  padding: 5% 10px 10px 5%;
+}
+#nosotros .images > img:nth-child(2) {
+  padding: 20% 20% 10px 10px;
+}
+#nosotros .images > img:nth-child(2):hover {
+  padding: 10% 10% 10px 10px;
+}
+#nosotros .images > img:nth-child(3) {
+  padding: 10px 10px 20% 20%;
+}
+#nosotros .images > img:nth-child(3):hover {
+  padding: 10px 10px 10% 10%;
+}
+#nosotros .images > img:nth-child(4) {
+  padding: 10px 10% 10% 10px;
+}
+#nosotros .images > img:nth-child(4):hover {
+  padding: 10px 5% 5% 10px;
+}
+
+
+#nosotros .contenido {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  line-height: 1.5;
+}
+
+#nosotros .contenido > h2 {
+  margin-top: 0;
+}
+
+#nosotros .contenido > p {
+  max-width: 500px;
+}
