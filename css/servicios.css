@@ -1,0 +1,61 @@
+#servicios {
+  padding: 150px 50px;
+  background-color: #defcd0;
+}
+
+#servicios h2 {
+  margin-bottom: 80px;
+}
+
+#servicios .tarjetas {
+  display: flex;
+  gap: 30px;
+}
+
+#servicios .tarjetas > .servicio {
+  flex: 1;
+  background-color: #fffefc;
+  padding: 2em;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform .3s ease-in-out;
+  box-shadow: 0 0 30px 10px rgba(51, 51, 51, 0.1);
+  position: relative;
+  background-position: center;
+  background-size: cover;
+}
+
+#servicios .tarjetas > .servicio > * {
+  position: relative;
+  z-index: 1;
+}
+
+#servicios .tarjetas > .servicio:before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(236, 236, 236, 0.75);
+  z-index: 0;
+}
+
+#servicios .tarjetas > .servicio:hover {
+  transform: scale(1.1);
+}
+
+#servicios .tarjetas > .servicio:nth-child(1) {
+  background-image: url('../images/nosotros-3.jpeg');
+}
+
+#servicios .tarjetas > .servicio:nth-child(2) {
+  background-image: url('../images/nosotros-1.jpeg');
+}
+
+#servicios .tarjetas > .servicio:nth-child(3) {
+  background-image: url('../images/nosotros-2.jpeg');
+}
+
+#servicios .tarjetas > .servicio:nth-child(4) {
+  background-image: url('../images/nosotros-4.jpeg');
+}
