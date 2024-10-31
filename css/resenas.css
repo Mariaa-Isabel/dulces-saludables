@@ -1,0 +1,44 @@
+#resenas {
+  padding: 80px 50px;
+  background-image: url('../images/pasteles_saludables.webp');
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+#resenas:before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  z-index: 0;
+}
+
+#resenas > * {
+  position: relative;
+  z-index: 1;
+}
+
+#resenas h2 {
+  margin-bottom: 80px;
+}
+
+#resenas ul {
+  gap: 20px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+#resenas ul > li {
+  flex: 1;
+  background-color: #e2ffc5;
+}
+
+#resenas ul > li .stars {
+  color: #ffe032;
+  font-size: 1.5em;
+  text-shadow: 0 0 1px #804b21;
+}
