@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dulces Saludables</title>
-  <link rel="stylesheet" href="css/index.css" />
-  <link rel="stylesheet" href="css/navbar.css" />
-  <link rel="stylesheet" href="css/banner.css" />
-  <link rel="stylesheet" href="css/nosotros.css" />
-  <link rel="stylesheet" href="css/servicios.css" />
-  <link rel="stylesheet" href="css/resenas.css" />
-  <link rel="stylesheet" href="css/footer.css" />
-</head>
-<body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dulces Saludables</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/banner.css" />
+    <link rel="stylesheet" href="css/nosotros.css" />
+    <link rel="stylesheet" href="css/servicios.css" />
+    <link rel="stylesheet" href="css/resenas.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+  </head>
+  <body>
     <!-- Barra de navegación -->
     <nav id="navbar">
       <ul id="menu">
@@ -23,12 +23,18 @@
         <li><a href="#servicios">Servicios</a></li>
         <li><a href="#resenas">Reseñas</a></li>
       </ul>
+      <ul id="sesion">
+        <li class="no-iniciada"><a href="./usuarios.html#ingreso">Iniciar Sesión</a></li>
+        <li class="no-iniciada"><a href="./usuarios.html#registro">Registrarse</a></li>
+        <li id="usuario" class="iniciada"></li>
+        <li id="salir" class="iniciada"><a href="#salir">Cerrar Sesión</a></li>
+      </ul>
     </nav>
 
     <!-- Banner -->
     <header id="banner">
       <h1>Dulces Saludables</h1>
-      <img class="logo" src="images/sandia.png" alt="logo" />
+      <img class="logo tembloroso" src="images/sandia.png" alt="logo" />
       <p>Deliciosos y nutritivos, para que disfrutes sin culpa</p>
     </header>
 
@@ -95,25 +101,25 @@
       <h2>Reseñas</h2>
       <ul>
         <li>
-          <blockquote>
+          <blockquote class="tembloroso">
             "Excelentes pasteles y servicio. 100% recomendado!"
           </blockquote>
           <p><span class="stars">⭐⭐⭐⭐⭐</span> Juan P.</p>
         </li>
         <li>
-          <blockquote>
+          <blockquote class="tembloroso">
             "El mejor catering que he probado. ¡Delicioso y saludable!"
           </blockquote>
           <p><span class="stars">⭐⭐⭐⭐⭐</span> María L.</p>
         </li>
         <li>
-          <blockquote>
+          <blockquote class="tembloroso">
             "Mis invitados quedaron fascinados con los bocaditos."
           </blockquote>
           <p><span class="stars">⭐⭐⭐⭐⭐</span> Pedro A.</p>
         </li>
         <li>
-          <blockquote>
+          <blockquote class="tembloroso">
             "Un servicio increíble y productos deliciosos."
           </blockquote>
           <p><span class="stars">⭐⭐⭐⭐</span> Sofía G.</p>
@@ -129,5 +135,7 @@
         <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
       </ul>
     </footer>
-</body>
+
+    <script src="scripts/menu.js"></script>
+  </body>
 </html>

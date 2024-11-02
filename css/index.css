@@ -1,8 +1,23 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Arial, sans-serif;
   font-size: 16px;
   margin: 0;
   padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+}
+
+section {
+  padding: 50px;
+  text-align: center;
 }
 
 h1 {
@@ -15,4 +30,28 @@ h2 {
 
 h3 {
   font-size: 1.5rem;
+}
+
+img.logo {
+  filter: brightness(.95);
+}
+
+
+@keyframes temblar {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.tembloroso:hover {
+  animation: temblar 0.5s;
+  animation-iteration-count: infinite;
 }
