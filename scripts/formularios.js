@@ -24,3 +24,6 @@ function activarAlternarFormularios() {
     });
   });
 }
+
+mostrarForm(document.location.hash);
+activarAlternarFormularios();
