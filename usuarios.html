@@ -1,55 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>¡Regístrate!</title>
-    <link rel="stylesheet" href="estilo.css">
-</head>
-<body background="backg1.png">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dulces Saludables - Usuarios</title>
+    <link rel="stylesheet" href="css/usuarios.css" />
+  </head>
+  <body>
     <main>
-        <div class="contenedor__todo">
-            <div class="caja__trasera">
-
-
-                <div class="caja__trasera-login">
-                    <h2>¿Ya tienes una cuenta?</h2>
-                    <p>Inicia sesión para ingresar a la página</p><br>
-                    <button id="btn__iniciar-sesión">Iniciar sesión</button>
-                </div>
-
-                <div class="caja__trasera-register">
-                    <h3>¿Aún no tienes una cuenta?</h3>
-                    <p>Regístrate para poder iniciar sesión</p><br>
-                    <a href="Registrarse.html"><button id="btn__registrarse">Registrarse</button></a>
-                </div>
-
-
-            </div>
-            <div class="contenedor__login-register">
-
-                <form action="" class="formulario__login">
-                    <h2>Iniciar sesión</h2>
-                    <input type="text" placeholder="Correo Electrónico">
-                    <input type="password" placeholder="Contraseña">
-                    <input type="text" placeholder="Usuario">
-                                    <button> ¡LISTO! </button>
-                </form>
-
-
-                <form action="" class="formulario__register">
-                    <h2>Registrarse</h2>
-                    <input type="text" placeholder="Correo Electrónico">
-                    <input type="password" placeholder="Contraseña">
-                    <input type="text" placeholder="Nombres">
-                    <input type="text" placeholder="Apellidos">
-                    <input type="text" placeholder="Género">
-                    <button>¡LISTO!</button>
-                </form>
-
-            </div>
+      <div class="contenedor__todo">
+        <div class="caja__trasera">
+          <div class="caja__trasera-login">
+            <h2>¿Ya tienes una cuenta?</h2>
+            <p>Inicia sesión para ingresar a la página</p>
+            <br />
+            <a href="#ingreso" class="button">Iniciar sesión</a>
+          </div>
+          <div class="caja__trasera-register">
+            <h2>¿Aún no tienes una cuenta?</h2>
+            <p>Regístrate para poder iniciar sesión</p>
+            <br />
+            <a href="#registro" class="button">Registrarse</a>
+          </div>
         </div>
+
+        <form id="ingreso" action="" class="login">
+          <a class="volver" href="./index.html">&lt; Volver a la inicio</a>
+          <h2>Iniciar sesión</h2>
+          <input
+            id="login-email"
+            name="email"
+            type="email"
+            required
+            placeholder="Correo Electrónico"
+            autofocus
+          />
+          <input
+            id="login-password"
+            name="password"
+            type="password"
+            required
+            placeholder="Contraseña"
+          />
+          <button type="submit">Ingresar</button>
+        </form>
+
+        <form id="registro" action="" class="register">
+          <a class="volver" href="./index.html">&lt; Volver a la inicio</a>
+          <h2>Registrarse</h2>
+          <input
+            id="register-email"
+            name="email"
+            type="email"
+            required
+            placeholder="Correo Electrónico"
+            autofocus
+          />
+          <input
+            id="register-password"
+            name="password"
+            type="password"
+            required
+            placeholder="Contraseña"
+          />
+          <input
+            id="register-nombres"
+            name="nombres"
+            type="text"
+            required
+            placeholder="Nombres"
+          />
+          <input
+            id="register-apellidos"
+            name="apellidos"
+            type="text"
+            required
+            placeholder="Apellidos"
+          />
+          <select id="register-genero" name="genero" required>
+            <option disabled selected>Seleccione una opción</option>
+            <option value="F">Femenino</option>
+            <option value="M">Masculino</option>
+          </select>
+          <br />
+          <button type="submit">¡LISTO!</button>
+        </form>
+      </div>
     </main>
-<script src="scripts/formularios.js"> </script>    
-</body>
+    <script src="scripts/formularios.js"></script>
+  </body>
 </html>

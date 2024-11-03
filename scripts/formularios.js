@@ -1,16 +1,26 @@
-document.getElementById("btn__register").addEventListener("click", register)
+function mostrarForm(codigo) {
+  let form = codigo ? document.querySelector(codigo) : null;
+  if (!form) {
+    form = document.getElementById("ingreso");
+  }
+  // Desactiva todos los formularios activos
+  document
+    .querySelectorAll(".contenedor__todo form.activo")
+    .forEach(function (activeForm) {
+      activeForm.classList.remove("activo");
+    });
 
-var contenedor_login_register = document.querySelector(".contenedor__login-register")
-var formulario_login = document.querySelector(".formulario__login")
-var formulario_register = document.querySelector(".formulario__register")
-var caja_trasera_login = document.querySelector(".caja__trasera-login")
-var caja_trasera_register = document.querySelector(".caja__trasera-register")
+  // Activa el formulario que nos interesa
+  form.classList.add("activo");
+  setTimeout(function () {
+    form.querySelector("*[autofocus]").focus();
+  }, 300);
+}
 
-
-function register(){
-    formulario_register.style.display = "block";
-    contenedor_login_register.style.left = "410px";
-    formulario_login.style.display = "none";
-    caja_trasera_register.style.opacity = "0"; 
-    caja_trasera_login.style.opacity = "1";
+function activarAlternarFormularios() {
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      mostrarForm(e.target.getAttribute("href"));
+    });
+  });
 }
