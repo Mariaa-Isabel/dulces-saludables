@@ -78,3 +78,4 @@ function activarSubmitFormularios() {
 
 mostrarForm(document.location.hash);
 activarAlternarFormularios();
+activarSubmitFormularios();
