@@ -1,0 +1,135 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/fondo-formularios.png");
+}
+
+main {
+  width: 100%;
+  padding: 20px;
+  margin: auto;
+  margin-top: 100px;
+  box-sizing: border-box;
+}
+
+.volver {
+  text-decoration: none;
+  color: #0b7a08;
+  position: relative;
+  top: -50px;
+}
+
+.contenedor__todo {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  position: relative;
+}
+
+.caja__trasera {
+  width: 100%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  background-color: rgba(16, 92, 29, 0.3);
+}
+
+.caja__trasera div {
+  margin: 100px 40px;
+  color: white;
+  transition: all 500ms;
+}
+
+.caja__trasera div p,
+.caja___trasera div button {
+  margin-top: 30px;
+}
+
+.caja___trasera div h3 {
+  font-weight: 400;
+  font-size: 26px;
+}
+
+.caja__trasera button,
+.caja__trasera .button {
+  padding: 10px 40px;
+  border: 2px solid #ffff;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #ffff;
+  outline: none;
+  transition: all 300ms;
+  text-decoration: none;
+}
+
+.caja__trasera button:hover,
+.caja__trasera .button:hover {
+  background: #ffff;
+  color: #0b7a08;
+}
+
+/*FORMULARIOS*/
+
+.contenedor__todo form {
+  width: 100%;
+  padding: 80px 20px;
+  box-sizing: border-box;
+  background: #ffff;
+  border-radius: 20px;
+  display: none;
+  position: absolute;
+  opacity: 0;
+  top: 50%;
+  left: 20px;
+  max-width: calc(50% - 20px);
+  transform: translateY(-50%);
+  transition: all .3s ease-in-out;
+  transition-delay: .3s;
+}
+
+
+.contenedor__todo form#registro {
+  right: 20px;
+  left: unset;
+}
+
+.contenedor__todo form h2 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #0b7a08;
+}
+
+.contenedor__todo form input,
+.contenedor__todo form select {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  background: #e9e9e9f2;
+  font-size: 16px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.contenedor__todo form button {
+  padding: 10px 40px;
+  margin-top: 40px;
+  border: none;
+  font-size: 14px;
+  background: #0b7a08;
+  color: #ffff;
+  cursor: pointer;
+  outline: none;
+}
+
+.contenedor__todo form.activo {
+  display: block;
+  opacity: 1;
+}
