@@ -27,20 +27,20 @@
         <form id="ingreso" action="" class="login">
           <a class="volver" href="./index.html">&lt; Volver a la inicio</a>
           <h2>Iniciar sesión</h2>
+          <label for="login-email">Correo Electrónico</label>
           <input
             id="login-email"
             name="email"
             type="email"
             required
-            placeholder="Correo Electrónico"
             autofocus
           />
+          <label for="login-password">Contraseña</label>
           <input
             id="login-password"
             name="password"
             type="password"
             required
-            placeholder="Contraseña"
           />
           <button type="submit">Ingresar</button>
         </form>
@@ -48,35 +48,36 @@
         <form id="registro" action="" class="register">
           <a class="volver" href="./index.html">&lt; Volver a la inicio</a>
           <h2>Registrarse</h2>
+          <label for="register-email">Correo Electrónico</label>
           <input
             id="register-email"
             name="email"
             type="email"
             required
-            placeholder="Correo Electrónico"
             autofocus
           />
+          <label for="register-password">Contraseña</label>
           <input
             id="register-password"
             name="password"
             type="password"
             required
-            placeholder="Contraseña"
           />
+          <label for="register-nombres">Nombres</label>
           <input
             id="register-nombres"
             name="nombres"
             type="text"
             required
-            placeholder="Nombres"
           />
+          <label for="register-apellidos">Apellidos</label>
           <input
             id="register-apellidos"
             name="apellidos"
             type="text"
             required
-            placeholder="Apellidos"
           />
+          <label for="register-genero">Género</label>
           <select id="register-genero" name="genero" required>
             <option disabled selected>Seleccione una opción</option>
             <option value="F">Femenino</option>
